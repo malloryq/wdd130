@@ -1,0 +1,46 @@
+@import url(https://fonts.google.com/specimen/Poppins?query=po);
+:root{
+    --primary-color: #43b929;
+    --secondary-color: #ffffff;
+    --accent1-color: #216869;
+    --accent2-color: #9cfffa;
+    
+    --heading-font: 'Poppins', sans-serif;
+    --Paragraph-font: 'Poppins', sans-serif;
+    
+    --nav-background-color: #ff2e00;
+    --nav-link-color: #ff2e00;
+    --nav-hover-link-color: #216869;
+    --nav-hover-background-color: #216869;
+}
+.hero {
+    position: relative;
+  }
+  
+
+  .hero h1, .hero article {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* Add additional styling as needed */
+  }
+  
+  .hero article {
+    position: absolute;
+    top: 70%;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    /* Add additional styling as needed */
+  }
+  
+  .hero article img {
+    float: right;
+    /* Add additional styling as needed */
+  }
+  .hero img {
+    display: block;
+    width: 80%;
+    height: auto;
+  }
+  

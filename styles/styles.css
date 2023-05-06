@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: boarder-box;
+    box-sizing: border-box;
 }
 
 
@@ -46,6 +46,7 @@ p {
 aside {
     width: 20em;
     text-align: center;
+    position: relative
 }
 
 aside h2 {
