@@ -1,46 +1,130 @@
-@import url(https://fonts.google.com/specimen/Poppins?query=po);
-:root{
-    --primary-color: #43b929;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+:root {
+    --primary-color: #629b55;
     --secondary-color: #ffffff;
     --accent1-color: #216869;
     --accent2-color: #9cfffa;
-    
+
     --heading-font: 'Poppins', sans-serif;
-    --Paragraph-font: 'Poppins', sans-serif;
-    
-    --nav-background-color: #ff2e00;
-    --nav-link-color: #ff2e00;
+    --paragraph-font: 'Poppins', sans-serif;
+
+    --nav-background-color: #af432a;
+    --nav-link-color: #ffffff;
     --nav-hover-link-color: #216869;
     --nav-hover-background-color: #216869;
 }
+
+header {
+    display: grid;
+    grid-template-columns: auto 1fr; /* Auto size for the logo, 1 fraction for the navigation */
+    align-items: center; /* Center vertically */
+    padding: 20px; /* Add padding as needed */
+    background-color: var(--nav-background-color);
+    color: var(--secondary-color);
+}
+header img {
+  width: 100px; /* Adjust the size as needed */
+  height: auto;
+  margin-right: 10px; /* Add spacing between the logo and navigation */
+}
+
+nav {
+    display: flex;
+    justify-content: space-around; /* Distribute items horizontally with equal spacing */
+    align-items: center; /* Center vertically */
+    list-style: none;
+    display: flex;
+}
+nav a {
+  color: var(--nav-link-color);
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+nav a:hover {
+  color: var(--nav-hover-link-color);
+}
+
 .hero {
     position: relative;
-  }
-  
+}
 
-  .hero h1, .hero article {
+.hero h1,
+.hero article {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    /* Add additional styling as needed */
-  }
-  
-  .hero article {
+    
+}
+
+.hero article {
     position: absolute;
     top: 70%;
     background-color: rgba(255, 255, 255, 0.7);
     padding: 20px;
-    /* Add additional styling as needed */
-  }
-  
-  .hero article img {
+    
+}
+
+.hero article img {
     float: right;
-    /* Add additional styling as needed */
-  }
-  .hero img {
+    
+}
+
+.hero img {
     display: block;
     width: 80%;
     height: auto;
-  }
-  
+}
+section {
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  gap: 20px;
+  align-items: center; 
+}
+section figure {
+  margin: 0;
+}
+section img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+section figcaption {
+  text-align: center;
+  font-style: italic;
+  margin-top: 10px;
+}
+section h2 {
+  grid-column: span 2;
+  text-align: center;
+}
+
+section p {
+  text-align: justify;
+}
+
+footer {
+  background-color: var(--primary-color);
+  padding: 20px;
+  color: var(--secondary-color);
+  display: flex;
+  justify-content: flex-end; 
+  align-items: center;
+}
+
+footer p {
+  margin: 0;
+  flex-grow: 1;
+}
+
+footer a {
+  margin-left: 10px;
+}
+
+footer img {
+  width: 30px; 
+  height: auto;
+}
