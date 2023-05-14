@@ -17,22 +17,21 @@
 
 header {
     display: grid;
-    grid-template-columns: auto 1fr; /* Auto size for the logo, 1 fraction for the navigation */
-    align-items: center; /* Center vertically */
-    padding: 20px; /* Add padding as needed */
+    grid-template-columns: auto 1fr;
+    align-items: center; 
+    padding: 20px;
     background-color: var(--nav-background-color);
     color: var(--secondary-color);
 }
 header img {
-  width: 100px; /* Adjust the size as needed */
+  width: 100px;
   height: auto;
-  margin-right: 10px; /* Add spacing between the logo and navigation */
-}
+  margin-right: 10px;
 
 nav {
     display: flex;
-    justify-content: space-around; /* Distribute items horizontally with equal spacing */
-    align-items: center; /* Center vertically */
+    justify-content: space-around;
+    align-items: center; /
     list-style: none;
     display: flex;
 }
