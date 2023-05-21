@@ -1,40 +1,43 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
 :root {
-    --primary-color: #629b55;
-    --secondary-color: #ffffff;
-    --accent1-color: #216869;
-    --accent2-color: #9cfffa;
+  --primary-color: #629b55;
+  --secondary-color: #ffffff;
+  --accent1-color: #216869;
+  --accent2-color: #9cfffa;
 
-    --heading-font: 'Poppins', sans-serif;
-    --paragraph-font: 'Poppins', sans-serif;
+  --heading-font: 'Poppins', sans-serif;
+  --paragraph-font: 'Poppins', sans-serif;
 
-    --nav-background-color: #af432a;
-    --nav-link-color: #ffffff;
-    --nav-hover-link-color: #216869;
-    --nav-hover-background-color: #216869;
+  --nav-background-color: #af432a;
+  --nav-link-color: #ffffff;
+  --nav-hover-link-color: #216869;
+  --nav-hover-background-color: #216869;
 }
 
 header {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    align-items: center; 
-    padding: 20px;
-    background-color: var(--nav-background-color);
-    color: var(--secondary-color);
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center; 
+  padding: 20px;
+  background-color: var(--nav-background-color);
+  color: var(--secondary-color);
 }
+
 header img {
   width: 100px;
   height: auto;
   margin-right: 10px;
+}
 
 nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center; /
-    list-style: none;
-    display: flex;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  display: flex;
 }
+
 nav a {
   color: var(--nav-link-color);
   text-decoration: none;
@@ -46,45 +49,45 @@ nav a:hover {
 }
 
 .hero {
-    position: relative;
+  position: relative;
 }
 
 .hero h1,
 .hero article {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .hero article {
-    position: absolute;
-    top: 70%;
-    background-color: rgba(255, 255, 255, 0.7);
-    padding: 20px;
-    
+  position: absolute;
+  top: 70%;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 20px;
 }
 
 .hero article img {
-    float: right;
-    
+  float: right;
 }
 
 .hero img {
-    display: block;
-    width: 80%;
-    height: auto;
+  display: block;
+  width: 80%;
+  height: auto;
 }
+
 section {
   display: grid;
   grid-template-columns: 1fr 1fr; 
   gap: 20px;
   align-items: center; 
 }
+
 section figure {
   margin: 0;
 }
+
 section img {
   width: 100%;
   height: auto;
@@ -96,6 +99,7 @@ section figcaption {
   font-style: italic;
   margin-top: 10px;
 }
+
 section h2 {
   grid-column: span 2;
   text-align: center;
@@ -126,4 +130,72 @@ footer a {
 footer img {
   width: 30px; 
   height: auto;
+}
+
+
+#google-map {
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 20px;
+}
+
+.contact-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact-info-item {
+  flex-basis: 50%;
+  margin-bottom: 10px;
+}
+
+
+section h2 {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+section figcaption {
+  margin-top: 5px;
+  font-style: italic;
+}
+
+
+.contact-form {
+  margin-top: 30px;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.contact-form input[type="radio"],
+.contact-form input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+.contact-form button[type="submit"] {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.contact-form button[type="submit"]:hover {
+  background-color: #45a049;
 }
