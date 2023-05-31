@@ -9,7 +9,7 @@
   --heading-font: 'Poppins', sans-serif;
   --paragraph-font: 'Poppins', sans-serif;
 
-  --nav-background-color: #af432a;
+  --nav-background-color: #4a95d3;
   --nav-link-color: #ffffff;
   --nav-hover-link-color: #216869;
   --nav-hover-background-color: #216869;
@@ -118,6 +118,7 @@ footer {
   display: flex;
   justify-content: flex-end; 
   align-items: center;
+  clear: both;
 }
 
 footer p {
@@ -200,4 +201,20 @@ section figcaption {
 
 .contact-form button[type="submit"]:hover {
   background-color: #45a049;
+}
+.Contactus a{
+  font-size: x-large;
+}
+
+.triplist{
+ display: grid;
+ grid-template-columns: 1fr 1fr 1fr; /* Three columns with equal width */
+ grid-gap: 10px;
+}
+.Trip1,
+.Trip2,
+.Trip3 {
+  top: auto; /* Removed position: relative */
+  background-color: var(--accent2-color);
+  padding: 20px;
 }
