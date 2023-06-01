@@ -244,7 +244,7 @@ section figcaption {
   top: 10%;
   left: 50%;
   transform: translateX(-50%);
-  background-color: rgba(255, 255, 255, 0.8); /* Off-white background */
+  background-color: rgba(255, 255, 255, 0.8);
   padding: 10px;
   white-space: nowrap;
 }
@@ -252,7 +252,7 @@ section figcaption {
 .whoare {
   display: grid;
   grid-template-columns: repeat(4, 1fr); /* Two columns with equal width */
-  grid-gap: 20px; /* Add some gap between grid items */
+  grid-gap: 0px; /* Add some gap between grid items */
 }
 
 .whoare img,
