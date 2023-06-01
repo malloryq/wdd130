@@ -81,7 +81,7 @@ nav a:hover {
 }
 .section1 section {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   gap: 20px; 
   align-items: center;
   background-color: #037e73; /* Set the background color */
@@ -90,8 +90,11 @@ nav a:hover {
 .section1 h1{
   text-align: center;
 }
+.section1 h2{
+  text-align: center;
+}
 #google-map{
-  grid-column: 3;
+  grid-column: 1;
 }
 section {
   display: grid;
